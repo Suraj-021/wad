@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .abc {
+      border-style: solid;
+      border-width: 25px 10px 4px 35px;
+      border-radius: 5px;
+
+    }
+
+    div {
+      border: 1px solid gray;
+      padding: 8px;
+    }
+
+    body {
+      background-color: lightgrey;
+      color: blue;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+
+
+    .ex2 {
+
+      direction: rtl;
+      unicode-bidi: bidi-override;
+    }
+
+    h1 {
+      text-shadow: 2px 2px red;
+    }
+
+    h2 {
+      text-decoration: underline;
+      word-spacing: -2px;
+    }
+
+    h3 {
+      text-decoration: line-through;
+      letter-spacing: -3px;
+    }
+
+    h4 {
+      text-decoration: underline;
+      word-spacing: 5px;
+    }
+
+    .capitalize {
+      text-transform: capitalize;
+    }
+
+    p {
+      padding: 100px;
+      border: 1px solid black;
+    }
+
+    .sp {
+      font-size: 50px;
+      text-align: center;
+      border-color: rgb(117, 10, 10);
+      text-transform: capitalize;
+      animation: rotate 155s linear 2000;
+    }
+
+    @keyframes rotate {
+      to {
+        transform: rotate(45deg);
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="abc">Employee registration form</h1>
+
+  <img src="http://sapaks.in/images/employee_reg.png" alt="">
+
+  <form>
+
+    <table border="0" cellpadding="5" cellspacing="0">
+      <tr>
+        <td>
+          <label><b>First name *</b></label><br />
+          <input name="First_Name" type="text" />
+        </td>
+        <td>
+          <label><b>Last name *</b></label><br />
+          <input name="Last_Name" type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label><b>Email *</b></label><br />
+          <input name="Email_Address" type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label><b>Portfolio website</b></label><br />
+          <input name="Portfolio" type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <label><b>Position you are applying for *</b></label><br />
+          <input name="Position" type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label><b>Salary requirements</b></label><br />
+          <input name="Salary" type="text" />
+        </td>
+        <td>
+          <label><b>When can you start?</b></label><br />
+          <input name="StartDate" type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label><b>Phone *</b></label><br />
+          <input name="Phone" type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <select name="dropdown">
+            <option value="Fresher" selected>Fresher</option>
+            <option value="Experienced">Experience</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Upload resume
+          <input type="file" name="fileupload" accept=".pdf" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="hidden" name="pagename" value="10" />
+          <input type="submit" name="submit" value="Submit" />
+          <input type="reset" name="reset" value="Reset" />
+        </td>
+      </tr>
+    </table>
+  </form>
+  <h1>Border and padding property</h1>
+
+  <p>Padding properties</p>
+
+  <div class="sp">rotating</div>
+</body>
+
+</html>

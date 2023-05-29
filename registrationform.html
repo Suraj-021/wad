@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+		.form {
+			max-width: 500px;
+			margin: auto;
+			margin-top: 50px;
+			border: 1px solid #ccc;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #ccc;
+		}
+
+		.form h2 {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="form">
+			<button class=" btn btn-primary"> <span class="badge badge-primary badge-pill">Back to
+					previous</span></button>
+			<br><br>
+			<h2>Registration Form</h2>
+			<form>
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" class="form-control" id="name" placeholder="Enter your name" required
+						data-toggle="tooltip" title="enter full name">
+				</div>
+				<div class="form-group">
+					<label for="email">Email address:</label>
+					<input type="email" class="form-control" id="email" placeholder="Enter email" required
+						data-toggle="tooltip" title="enter valid email address">
+				</div>
+				<div class="form-group">
+					<label for="password">Password:</label>
+					<input type="password" class="form-control" id="password" placeholder="Enter password" required>
+				</div>
+				<div class="form-group">
+					<label for="confirm_password">Confirm Password:</label>
+					<input type="password" class="form-control" id="confirm_password" placeholder="Confirm password"
+						required>
+				</div>
+				<div class="form-group">
+					<label for="phone">Phone:</label>
+					<input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+				</div>
+				<div class="form-group">
+					<label for="dob">Date of Birth:</label>
+					<input type="date" class="form-control" id="dob" placeholder="Enter date of birth">
+				</div>
+				<div class="form-group form-check">
+					<label class="form-check-label">
+						<input class="form-check-input" type="checkbox" required> I agree to the terms and conditions.
+					</label>
+				</div>
+
+				<button type="submit" class="btn btn-primary btn-block" data-toggle="tooltip"
+					title="CLick here to submit">Submit</button>
+
+
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
